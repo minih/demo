@@ -1,3 +1,5 @@
+We should change all the setup documentation
+
 Installing TeamCity Server
 After you obtained the TeamCity installation package, proceed with corresponding installation instructions:
 Windows .exe distribution - the executable which provides the installation wizard for Windows platforms and allows installing the server as a Windows service;
