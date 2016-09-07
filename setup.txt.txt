@@ -1,0 +1,14 @@
+Installing TeamCity Server
+After you obtained the TeamCity installation package, proceed with corresponding installation instructions:
+Windows .exe distribution - the executable which provides the installation wizard for Windows platforms and allows installing the server as a Windows service;
+.tar.gz distribution - the archive with a "portable" version suitable for all platforms;
+.war distribution - for experienced users who want to run TeamCity in a separately installed Web application server. Please consider using .tar.gz distribution instead. .war is not recommended to use unless really required (please let us know the reasons).
+Compared to the .war distribution, the .exe and .tar.gz distributions:
+include a Tomcat version which TeamCity is tested with, so it is known to be a working combination. This might not be the case with an external Tomcat.
+define additional JRE options which are usually recommended for running the server
+have the teamcity-server startup script which provides several convenience options (e.g. separate environment variable for memory settings) and configures TeamCity correctly (e.g. log4j configuration)
+(at least under Windows) provide better error reporting for some cases (like a missing Java installation)
+under Windows, allow running TeamCity as a service with the ability to use the same configuration as if run from the console
+come bundled with a build agent distribution and single startup script which allows for easy TeamCity server evaluation with one agent
+come bundled with the devPackage for TeamCity plugin development.
+may provide more convenience features in the future
